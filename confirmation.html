@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Réservation confirmée ✨</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="confirmation">
+
+        <div class="confirmation-card">
+
+            <div class="check">✓</div>
+
+            <h1>Réservation confirmée ! ✨</h1>
+
+            <p class="message">
+                Merci pour votre réservation 💕
+            </p>
+
+            <div class="recap">
+
+                <h2>Votre rendez-vous 🎀</h2>
+
+                <p>
+                    <strong>Nom :</strong>
+                    <span id="nom"></span>
+                </p>
+
+                <p>
+                    <strong>Téléphone :</strong>
+                    <span id="telephone"></span>
+                </p>
+
+                <p>
+                    <strong>Date :</strong>
+                    <span id="date"></span>
+                </p>
+
+                <p>
+                    <strong>Heure :</strong>
+                    <span id="heure"></span>
+                </p>
+
+                <hr>
+
+                <h2>Votre personnalisation 💗</h2>
+
+                <p>
+                    <strong>Coiffure :</strong>
+                    <span id="coiffure"></span>
+                </p>
+
+                <p>
+                    <strong>Longueur :</strong>
+                    <span id="longueur"></span>
+                </p>
+
+                <p>
+                    <strong>Couleur :</strong>
+                    <span id="couleur"></span>
+                </p>
+
+                <p>
+                    <strong>Finition :</strong>
+                    <span id="finition"></span>
+                </p>
+
+            </div>
+
+            <a href="index.html" class="btn-suivant">
+                Retour à l'accueil 🏠
+            </a>
+
+        </div>
+
+    </main>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const donnees =
+        JSON.parse(
+            localStorage.getItem("reservation")
+        );
+
+    if (!donnees) {
+        return;
+    }
+
+    document.getElementById("nom").textContent =
+        donnees.nom;
+
+    document.getElementById("telephone").textContent =
+        donnees.telephone;
+
+    document.getElementById("date").textContent =
+        donnees.date;
+
+    document.getElementById("heure").textContent =
+        donnees.heure;
+
+
+    const personnalisation =
+        donnees.personnalisation || {};
+
+
+    document.getElementById("coiffure").textContent =
+        personnalisation.coiffure || "-";
+
+    document.getElementById("longueur").textContent =
+        personnalisation.longueur || "-";
+
+    document.getElementById("couleur").textContent =
+        personnalisation.couleur || "-";
+
+    document.getElementById("finition").textContent =
+        personnalisation.finition || "-";
+
+});
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personnalise ta coiffure - Éclat Hair Studio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        Éclat <span>Hair Studio</span>
+    </div>
+
+    <div class="menu">
+
+        <a href="index.html">
+            Accueil
+        </a>
+
+        <a href="catalogue.html">
+            Catalogue
+        </a>
+
+        <a href="prestations.html">
+            Prestations
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =====================================================
+     EN-TÊTE
+===================================================== -->
+
+<section class="custom-header">
+
+    <p class="petit-titre">
+        TON STYLE, TES CHOIX
+    </p>
+
+    <h1>
+        Personnalise ta coiffure ✨
+    </h1>
+
+    <p>
+        Choisis chaque détail de ta coiffure
+        pour créer un modèle qui te ressemble.
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONFIGURATEUR
+===================================================== -->
+
+<main class="customizer">
+
+
+    <!-- =================================================
+         APERÇU
+    ================================================== -->
+
+    <div class="preview-box">
+
+        <div class="preview-image">
+
+            <img
+                id="previewImage"
+                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80"
+                alt="Aperçu de la coiffure">
+
+        </div>
+
+
+        <div class="preview-content">
+
+            <p class="categorie">
+                TON MODÈLE
+            </p>
+
+            <h2 id="previewTitle">
+                Box Braids
+            </h2>
+
+            <p id="previewDescription">
+                Crée ton propre style en choisissant
+                la couleur, la longueur et les accessoires.
+            </p>
+
+
+            <div class="price-box">
+
+                <span>
+                    Prix estimé
+                </span>
+
+                <strong id="price">
+                    250 DH
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         OPTIONS
+    ================================================== -->
+
+    <div class="options-box">
+
+
+        <!-- MODÈLE -->
+
+        <div class="option-section">
+
+            <h3>
+                01. Choisis ton modèle
+            </h3>
+
+            <div class="option-grid">
+
+
+                <button
+                    class="style-option active"
+                    data-style="Box Braids"
+                    data-price="250"
+                    data-image="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80">
+
+                    <span class="option-icon">
+                        ✨
+                    </span>
+
+                    <strong>
+                        Box Braids
+                    </strong>
+
+                    <small>
+                        Classiques
+                    </small>
+
+                </button>
+
+
+                <button
+                    class="style-option"
+                    data-style="Knotless Braids"
+                    data-price="300"
+                    data-image="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=900&q=80">
+
+                    <span class="option-icon">
+                        🎀
+                    </span>
+
+                    <strong>
+                        Knotless
+                    </strong>
+
+                    <small>
+                        Sans nœuds
+                    </small>
+
+                </button>
+
+
+                <button
+                    class="style-option"
+                    data-style="Fulani Braids"
+                    data-price="350"
+                    data-image="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=900&q=80">
+
+                    <span class="option-icon">
+                        👑
+                    </span>
+
+                    <strong>
+                        Fulani
+                    </strong>
+
+                    <small>
+                        Tribal
+                    </small>
+
+                </button>
+
+
+                <button
+                    class="style-option"
+                    data-style="Boho Braids"
+                    data-price="380"
+                    data-image="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80">
+
+                    <span class="option-icon">
+                        🌸
+                    </span>
+
+                    <strong>
+                        Boho
+                    </strong>
+
+                    <small>
+                        Avec boucles
+                    </small>
+
+                </button>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- COULEUR -->
+
+        <div class="option-section">
+
+            <h3>
+                02. Choisis ta couleur
+            </h3>
+
+            <p class="option-description">
+                Sélectionne la couleur de tes extensions.
+            </p>
+
+
+            <div class="color-options">
+
+
+                <button
+                    class="color-option active"
+                    data-color="Noir naturel"
+                    data-extra="0">
+
+                    <span
+                        class="color-circle black">
+                    </span>
+
+                    <span>
+                        Noir naturel
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="color-option"
+                    data-color="Brun chocolat"
+                    data-extra="0">
+
+                    <span
+                        class="color-circle chocolate">
+                    </span>
+
+                    <span>
+                        Brun chocolat
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="color-option"
+                    data-color="Caramel"
+                    data-extra="20">
+
+                    <span
+                        class="color-circle caramel">
+                    </span>
+
+                    <span>
+                        Caramel
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="color-option"
+                    data-color="Bordeaux"
+                    data-extra="20">
+
+                    <span
+                        class="color-circle burgundy">
+                    </span>
+
+                    <span>
+                        Bordeaux
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="color-option"
+                    data-color="Blond miel"
+                    data-extra="30">
+
+                    <span
+                        class="color-circle honey">
+                    </span>
+
+                    <span>
+                        Blond miel
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="color-option"
+                    data-color="Blond clair"
+                    data-extra="30">
+
+                    <span
+                        class="color-circle blonde">
+                    </span>
+
+                    <span>
+                        Blond clair
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="color-option"
+                    data-color="Rose"
+                    data-extra="40">
+
+                    <span
+                        class="color-circle pink">
+                    </span>
+
+                    <span>
+                        Rose
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="color-option"
+                    data-color="Violet"
+                    data-extra="40">
+
+                    <span
+                        class="color-circle purple">
+                    </span>
+
+                    <span>
+                        Violet
+                    </span>
+
+                </button>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- TAILLE -->
+
+        <div class="option-section">
+
+            <h3>
+                03. Choisis la taille des tresses
+            </h3>
+
+
+            <div class="size-options">
+
+
+                <button
+                    class="size-option"
+                    data-size="Small"
+                    data-extra="100">
+
+                    <strong>
+                        Small
+                    </strong>
+
+                    <small>
+                        Fines & détaillées
+                    </small>
+
+                </button>
+
+
+                <button
+                    class="size-option active"
+                    data-size="Medium"
+                    data-extra="50">
+
+                    <strong>
+                        Medium
+                    </strong>
+
+                    <small>
+                        Équilibre parfait
+                    </small>
+
+                </button>
+
+
+                <button
+                    class="size-option"
+                    data-size="Large"
+                    data-extra="0">
+
+                    <strong>
+                        Large
+                    </strong>
+
+                    <small>
+                        Volumineuses
+                    </small>
+
+                </button>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- LONGUEUR -->
+
+        <div class="option-section">
+
+            <h3>
+                04. Choisis la longueur
+            </h3>
+
+
+            <div class="length-options">
+
+
+                <button
+                    class="length-option active"
+                    data-length="Mi-dos"
+                    data-extra="0">
+
+                    <strong>
+                        Mi-dos
+                    </strong>
+
+                    <small>
+                        20–24"
+                    </small>
+
+                </button>
+
+
+                <button
+                    class="length-option"
+                    data-length="Taille"
+                    data-extra="80">
+
+                    <strong>
+                        Taille
+                    </strong>
+
+                    <small>
+                        26–30"
+                    </small>
+
+                </button>
+
+
+                <button
+                    class="length-option"
+                    data-length="Très longue"
+                    data-extra="150">
+
+                    <strong>
+                        Très longue
+                    </strong>
+
+                    <small>
+                        30"+ 
+                    </small>
+
+                </button>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ACCESSOIRES -->
+
+        <div class="option-section">
+
+            <h3>
+                05. Ajoute tes accessoires
+            </h3>
+
+            <p class="option-description">
+                Tu peux sélectionner plusieurs accessoires.
+            </p>
+
+
+            <div class="accessory-options">
+
+
+                <label class="accessory">
+
+                    <input
+                        type="checkbox"
+                        data-name="Perles"
+                        data-extra="30">
+
+                    <span class="accessory-icon">
+                        🫧
+                    </span>
+
+                    <span>
+                        Perles
+                    </span>
+
+                    <strong>
+                        +30 DH
+                    </strong>
+
+                </label>
+
+
+
+                <label class="accessory">
+
+                    <input
+                        type="checkbox"
+                        data-name="Anneaux"
+                        data-extra="40">
+
+                    <span class="accessory-icon">
+                        💍
+                    </span>
+
+                    <span>
+                        Anneaux
+                    </span>
+
+                    <strong>
+                        +40 DH
+                    </strong>
+
+                </label>
+
+
+
+                <label class="accessory">
+
+                    <input
+                        type="checkbox"
+                        data-name="Cauris"
+                        data-extra="50">
+
+                    <span class="accessory-icon">
+                        🐚
+                    </span>
+
+                    <span>
+                        Cauris
+                    </span>
+
+                    <strong>
+                        +50 DH
+                    </strong>
+
+                </label>
+
+
+
+                <label class="accessory">
+
+                    <input
+                        type="checkbox"
+                        data-name="Rubans"
+                        data-extra="25">
+
+                    <span class="accessory-icon">
+                        🎀
+                    </span>
+
+                    <span>
+                        Rubans
+                    </span>
+
+                    <strong>
+                        +25 DH
+                    </strong>
+
+                </label>
+
+
+
+                <label class="accessory">
+
+                    <input
+                        type="checkbox"
+                        data-name="Fleurs"
+                        data-extra="40">
+
+                    <span class="accessory-icon">
+                        🌸
+                    </span>
+
+                    <span>
+                        Fleurs
+                    </span>
+
+                    <strong>
+                        +40 DH
+                    </strong>
+
+                </label>
+
+
+
+                <label class="accessory">
+
+                    <input
+                        type="checkbox"
+                        data-name="Charms"
+                        data-extra="50">
+
+                    <span class="accessory-icon">
+                        ✨
+                    </span>
+
+                    <span>
+                        Charms
+                    </span>
+
+                    <strong>
+                        +50 DH
+                    </strong>
+
+                </label>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RÉSUMÉ -->
+
+        <div class="summary-box">
+
+            <h3>
+                ✨ Ton choix
+            </h3>
+
+
+            <div class="summary-row">
+
+                <span>
+                    Modèle
+                </span>
+
+                <strong id="summaryStyle">
+                    Box Braids
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>
+                    Couleur
+                </span>
+
+                <strong id="summaryColor">
+                    Noir naturel
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>
+                    Taille
+                </span>
+
+                <strong id="summarySize">
+                    Medium
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>
+                    Longueur
+                </span>
+
+                <strong id="summaryLength">
+                    Mi-dos
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>
+                    Accessoires
+                </span>
+
+                <strong id="summaryAccessories">
+                    Aucun
+                </strong>
+
+            </div>
+
+
+            <div class="total">
+
+                <span>
+                    TOTAL ESTIMÉ
+                </span>
+
+                <strong id="summaryPrice">
+                    300 DH
+                </strong>
+
+            </div>
+
+
+            <button
+                class="reservation-button"
+                onclick="confirmChoice()">
+
+                ✨ Choisir ce modèle
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <h3>
+        Éclat Hair Studio
+    </h3>
+
+    <p>
+        Votre beauté, notre passion ✨
+    </p>
+
+</footer>
+
+
+
+<script src="personnalisation.js"></script>
+
+</body>
+
+</html>
+<a href="reservation.html" class="btn-suivant">
+    Passer à la réservation 💗 →
+</a>

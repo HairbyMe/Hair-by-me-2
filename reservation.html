@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Réservation - Éclat Hair Studio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     MENU
+========================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        Éclat <span>Hair Studio</span>
+    </div>
+
+    <div class="menu">
+
+        <a href="index.html">
+            Accueil
+        </a>
+
+        <a href="catalogue.html">
+            Catalogue
+        </a>
+
+        <a href="prestations.html">
+            Prestations
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =========================
+     EN-TÊTE
+========================= -->
+
+<section class="reservation-header">
+
+    <p class="petit-titre">
+        DERNIÈRE ÉTAPE
+    </p>
+
+    <h1>
+        Réserve ton rendez-vous 💕
+    </h1>
+
+    <p>
+        Vérifie tes choix puis indique tes informations
+        pour demander ton rendez-vous.
+    </p>
+
+</section>
+
+
+
+<!-- =========================
+     CONTENU
+========================= -->
+
+<main class="reservation-container">
+
+
+    <!-- =========================
+         RÉCAPITULATIF
+    ========================== -->
+
+    <div class="reservation-summary">
+
+        <p class="petit-titre">
+            TON MODÈLE
+        </p>
+
+        <h2>
+            Récapitulatif de ta coiffure
+        </h2>
+
+
+        <div class="summary-item">
+
+            <span>
+                Coiffure
+            </span>
+
+            <strong id="reservationStyle">
+                Box Braids
+            </strong>
+
+        </div>
+
+
+        <div class="summary-item">
+
+            <span>
+                Couleur
+            </span>
+
+            <strong id="reservationColor">
+                Noir naturel
+            </strong>
+
+        </div>
+
+
+        <div class="summary-item">
+
+            <span>
+                Taille
+            </span>
+
+            <strong id="reservationSize">
+                Medium
+            </strong>
+
+        </div>
+
+
+        <div class="summary-item">
+
+            <span>
+                Longueur
+            </span>
+
+            <strong id="reservationLength">
+                Mi-dos
+            </strong>
+
+        </div>
+
+
+        <div class="summary-item">
+
+            <span>
+                Accessoires
+            </span>
+
+            <strong id="reservationAccessories">
+                Aucun
+            </strong>
+
+        </div>
+
+
+        <div class="reservation-total">
+
+            <span>
+                Prix estimé
+            </span>
+
+            <strong id="reservationPrice">
+                300 DH
+            </strong>
+
+        </div>
+
+
+        <button
+            class="modify-button"
+            onclick="history.back()">
+
+            ← Modifier ma coiffure
+
+        </button>
+
+    </div>
+
+
+
+    <!-- =========================
+         FORMULAIRE
+    ========================== -->
+
+    <div class="reservation-form">
+
+        <p class="petit-titre">
+            TES INFORMATIONS
+        </p>
+
+        <h2>
+            Parlons de ton rendez-vous 💌
+        </h2>
+
+
+        <form id="bookingForm">
+
+
+            <!-- NOM -->
+
+            <div class="form-group">
+
+                <label for="name">
+                    Nom et prénom
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Ex : Sarah Dupont"
+                    required>
+
+            </div>
+
+
+
+            <!-- TELEPHONE -->
+
+            <div class="form-group">
+
+                <label for="phone">
+                    Numéro de téléphone
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Ex : 06 00 00 00 00"
+                    required>
+
+            </div>
+
+
+
+            <!-- EMAIL -->
+
+            <div class="form-group">
+
+                <label for="email">
+                    Adresse e-mail
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Ex : sarah@email.com">
+
+            </div>
+
+
+
+            <!-- DATE -->
+
+            <div class="form-group">
+
+                <label for="date">
+                    Date souhaitée
+                </label>
+
+                <input
+                    type="date"
+                    id="date"
+                    required>
+
+            </div>
+
+
+
+            <!-- HEURE -->
+
+            <div class="form-group">
+
+                <label for="time">
+                    Heure souhaitée
+                </label>
+
+                <select
+                    id="time"
+                    required>
+
+                    <option value="">
+                        Choisir une heure
+                    </option>
+
+                    <option>
+                        09:00
+                    </option>
+
+                    <option>
+                        10:00
+                    </option>
+
+                    <option>
+                        11:00
+                    </option>
+
+                    <option>
+                        12:00
+                    </option>
+
+                    <option>
+                        13:00
+                    </option>
+
+                    <option>
+                        14:00
+                    </option>
+
+                    <option>
+                        15:00
+                    </option>
+
+                    <option>
+                        16:00
+                    </option>
+
+                    <option>
+                        17:00
+                    </option>
+
+                    <option>
+                        18:00
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- MESSAGE -->
+
+            <div class="form-group">
+
+                <label for="message">
+                    Message supplémentaire
+                </label>
+
+                <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Une demande particulière ?"></textarea>
+
+            </div>
+
+
+
+            <!-- BOUTON -->
+
+            <button
+                type="submit"
+                class="reservation-button">
+
+                💕 Demander mon rendez-vous
+
+            </button>
+
+
+        </form>
+
+
+        <p class="form-note">
+
+            Après avoir envoyé ta demande, WhatsApp
+            s'ouvrira avec ton récapitulatif.
+
+        </p>
+
+    </div>
+
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <h3>
+        Éclat Hair Studio
+    </h3>
+
+    <p>
+        Votre beauté, notre passion ✨
+    </p>
+
+</footer>
+
+
+
+<script src="reservation.js"></script>
+
+</body>
+
+</html>
+<a href="index.html" class="btn-suivant">
+    Retour à l'accueil 🏠 ✨
+</a>
+
+<div class="recap-personnalisation">
+
+    <h2>🎀 Votre personnalisation</h2>
+
+    <p>
+        <strong>Coiffure :</strong>
+        <span id="recapCoiffure">-</span>
+    </p>
+
+    <p>
+        <strong>Longueur :</strong>
+        <span id="recapLongueur">-</span>
+    </p>
+
+    <p>
+        <strong>Couleur :</strong>
+        <span id="recapCouleur">-</span>
+    </p>
+
+    <p>
+        <strong>Finition :</strong>
+        <span id="recapFinition">-</span>
+    </p>
+
+</div>
+<a href="confirmation.html" class="btn-suivant">
+    Confirmer ma réservation 💕 →
+</a>
+<div class="recap-personnalisation">
+    <h2>🎀 Votre personnalisation</h2>
+    <div id="personnalisationRecap">
+        Chargement de votre personnalisation...
+    </div>
+</div>
